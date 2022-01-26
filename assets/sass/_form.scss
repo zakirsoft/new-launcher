@@ -1,0 +1,200 @@
+.sm-searech{
+	position: relative;
+	.search-icon-btn{
+		position: absolute;
+		top: 10px;left: 14px;
+	}
+	.form-control{
+		padding-left:43px;
+	}
+}
+.form-control{
+	min-height: 44px;
+	border: 1px solid #D3D5DA;
+	border-radius: 8px;
+	font-size: 14px;
+	&:focus{ 
+		border:1px solid #743393; 
+		box-shadow:none;   
+	}
+}
+.form-check-input:focus{ 
+	border-color: #9CA2AE;
+	&:focus{  
+		box-shadow:none;   
+	}
+}
+.form-check-input[type="checkbox"] {
+	border-radius: 4px;
+}
+.form-check-input {
+	background-position: center 0.5px;
+	background-color: transparent;
+	border: 2px solid #9CA2AE; 
+	border-radius: 4px;
+}  
+.form-check-input:checked[type="checkbox"] {
+	background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10l3 3l6-6'/%3e%3c/svg%3e");
+}
+.form-check-input:checked {
+	background-color:#743393;
+	border-color:#743393; 
+}
+.form-check-label{ 
+	font-size: 14px;
+	line-height:19.6px;
+	color: #111828;
+}
+ .form-check{
+ 	margin-bottom: 0; 
+ }
+.check-box-lists{
+	li{ 
+		position: relative;
+		.plus-toggle{
+			position: absolute;
+			right:-1px;
+			top:3px;    
+			@media #{$lg_device}{
+				right: -4px;
+			}
+		}
+		.check-box-lists{
+			display: none; 
+		}
+	}
+}
+.input_group{
+	position: relative;
+	display: flex;
+	align-items: center;
+	width: 100%; 
+	.sep { 
+		color: var(--color-dark);
+		font-size: 31px; 
+		display: block;
+		margin: 0 7px;
+	}
+}
+.input-style2{ 
+	position: relative;
+	.placeholder_text {
+		position: absolute;
+		left: 8px;
+		top: 13px; 
+		z-index: 10;
+		font-size: 14px;
+		pointer-events: none;
+		color: #6B7380;
+		padding: 0 5px;
+		display: block; 
+		line-height: 19px;
+		background-color: transparent; 
+		transition:transform 150ms ease-out, font-size 150ms ease-out, -webkit-transform 150ms ease-out; 
+	}
+}
+.input-style2.focused{ 
+	.placeholder_text{ 
+		transform:translateY(-23px);
+		background-color: #F9FAFC; 
+		font-size: 10px; 
+		@media #{$xl_device}{
+			background-color:#fff; 
+		}
+	}
+}
+.select-with-radio{ 
+	width: 191px;  
+	.nice-select { 
+		width: 100%;
+		padding: 0 12px;
+		border-color: #D1D4DB;  
+		height: 36px;
+		border-radius:4px; 
+		&:hover{
+			border-color: #743393; 
+			background-color:#fff;
+		}
+		.current {
+			white-space: nowrap;
+			text-overflow: ellipsis;
+			width: 100%;
+			display: block;
+			overflow: hidden;
+			padding-right: 16px;
+			line-height: 35px; 
+			font-size: 14px;
+			color: #111828;  
+			&::before{
+				content: attr(prefix);
+				display: inline-block; 
+				margin-right: 3.4px; 
+			} 
+			@media #{$lg_device}{ 
+				font-size: 16px;
+			}
+		}
+		&::after {
+			height:8px; 
+			width:8px;
+			border-bottom: 2px solid #111828;
+			border-right: 2px solid #111828; 
+			right: 17px; 
+			@media #{$sm_device}{
+				top: calc(50% + -1px);
+			}
+		}
+		 .option{ 
+			color: #111828;
+			font-size: 14px;
+			padding-left: 12px;
+			position: relative;
+			padding-right: 36px;
+			white-space: nowrap;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			&::before {
+				content: "";
+				position: absolute;
+				right: 12px;
+				top: 50%;
+				height: 15px;
+				width: 15px; 
+				border: 1.5px solid #9CA2AE;
+				border-radius: 50%;
+				transform: translateY(-50%); 
+				font-size: 8px;
+				line-height: 14px; 
+				color: #fff;
+				text-align: center;
+				color: transparent;
+			}
+		 }
+	}
+	.nice-select.open, .nice-select:active, .nice-select:focus {
+		border-color: #743393; 
+
+	}
+	.nice-select .option.selected {
+		font-weight: 600;
+		&::before{  
+		    background-color: #743393;
+		    border-color: #743393;
+		    color: #fff;
+		    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10l3 3l6-6'/%3e%3c/svg%3e");
+		    background-size: contain;
+		    background-position: 0px 0.01px;
+		    background-repeat: no-repeat;
+		}
+	} 
+	.nice-select .option.focus, .nice-select .option.selected.focus, .nice-select .option:hover {
+		background-color: #F9FAFC;
+	}
+	.list{ 
+		width: 100%;
+		background: #FFFFFF;
+		border: 1px solid #E6E7EB;
+		box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.07);
+		border-radius: 4px;
+	}
+}
