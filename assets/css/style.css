@@ -2457,4 +2457,6 @@ p .custom-badge-group {
     .side-menu-wrapper .sidenav-footer .btn span {
       font-size: 12px; } }
 
+:root {
+  scroll-behavior: unset !important; }
 /*# sourceMappingURL=style.css.map */
