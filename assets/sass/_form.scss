@@ -53,8 +53,11 @@
 		position: relative;
 		.plus-toggle{
 			position: absolute;
-			right:-1px;
-			top:3px;    
+			right: -3px;
+			top: 2px;
+      // right: -3px;
+      // top: 50%;
+      // transform: translateY(-50%);
 			@media #{$lg_device}{
 				right: -4px;
 			}

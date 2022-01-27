@@ -122,7 +122,7 @@ function InitStoresSlide(){
 
 
   // Filter scrips
-  $(".filter-content-item .title .angle-btn").on('click', function() { 
+  $(".filter-content-item .title .angle-btn, .filter-content-item .title h3").on('click', function() { 
     var ThisItem = $(this).closest('.filter-content-item').find('.filter-body');
     ThisItem.slideToggle(250, function(){ 
       if(ThisItem.find('.check-box-lists').hasClass('box-nc-scroll')){

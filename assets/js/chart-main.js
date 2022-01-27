@@ -120,8 +120,29 @@ var options = {
   chart: {
     type: "bar",
     height: 350,
-    stacked: true
+    stacked: true,
+    toolbar: {
+      show: false,
+    }
   },
+  responsive: [
+    {
+      breakpoint: 992,
+      options: {
+        chart: {
+          height: 700,
+        },      
+        plotOptions: {
+          bar: {
+            horizontal: true
+          }
+        },
+        legend: {
+          position: "bottom"
+        }
+      }
+    }
+  ],
   plotOptions: {
     bar: {
       horizontal: false,

@@ -1,0 +1,123 @@
+.mb-24 {
+  margin-bottom: 24px;
+}
+
+.input-style2 {
+  &.focuesd {
+    .placeholder_text {
+      color: #743393;
+    }
+  }
+} 
+
+.input-style2.focused {
+  .placeholder_text {
+    color: #743393;
+  }
+}
+
+.filter-content-item{
+	.title{
+    padding-right: 0;
+    display: flex;
+    align-items: center;
+    h3 {
+      text-align: left;
+      font-size: 16px;
+      line-height: 20px;
+      font-weight: 600;
+      user-select: none;
+      cursor: pointer;
+    }
+    .chip {
+
+    }
+		.angle-btn{  
+			position: unset;
+      flex-grow: 1;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      transform: unset;
+      .svg-angle-icon {
+        margin-right: -6px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 20px;
+        width: 20px; 
+        border-radius: 50%;
+        border-color: transparent;
+        background-color: transparent;
+        transform: rotate(180deg);
+        transition: transform 0.2s linear;
+        &:hover{
+          background: #F3F4F6;   
+        }
+      }
+    }
+  }
+}
+
+.filter-content-item.has-opened .title .angle-btn {
+  transform: unset !important;
+  .svg-angle-icon {
+    transform: rotate(0deg);
+  }
+}
+
+.filter-content-item.has-opened{ 
+	.title,.title.has-opened-title{
+		.angle-btn{
+			transform: scale(-1); 
+		}
+	} 
+	.title.has-opened-title{
+		.angle-btn{
+			transform: scale(-1);  
+		}
+	}  
+	.filter-body{
+		display: block; 
+	} 
+	.toggle-with-parent{
+		display: none;
+	}
+}
+
+.table-wrap .table-responsive .table.new-launch-column {
+  margin-bottom: 24px;
+}
+
+.side-menu-wrapper{ 
+  .side-navbar-nav{ 
+    height: calc(100vh - 163px) !important; 
+  }
+  .sidenav-footer{
+    position: unset !important;
+    left: 0;
+    bottom:0;
+    width: 100%;
+    z-index: 0; 
+    z-index: 25; 
+    background: #FFFFFF;
+    box-shadow: 0px -2px 20px rgba(0, 0, 0, 0.07);
+    padding:16px 24px; 
+  }
+}
+
+.custom-tab-wrapper span.d-inline-block.mb-md-1 {
+  margin-bottom: 1px !important;
+}
+
+.responsive-chart {
+  overflow-x: scroll;
+}
+
+.chart-wrapper {
+  // height: 800px;
+  &.market-segment {
+    width: 800px;
+    overflow: scroll;
+  }
+}
