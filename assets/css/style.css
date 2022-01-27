@@ -2914,7 +2914,7 @@ p .custom-badge-group {
 
 
 /* hero section */
-section.hero-area {
+section.hero-slider-section {
     border-bottom: 1px solid #E6E7EB;
     padding-bottom: 8px;
 }
@@ -2973,9 +2973,20 @@ button.brochure-btn {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: all 0.4s;
 }
-button.brochure-btn img{
+button.brochure-btn:hover{
+  color: #fff;
+  background-color: #743393;
+}
+button.brochure-btn svg{
   margin-right: 5px;
+}
+button.brochure-btn path{
+  transition: all 0.4s;
+}
+button.brochure-btn:hover path{
+  stroke: white;
 }
 
 /*hero swiper slider */
@@ -3041,4 +3052,31 @@ button.project-btn {
     border-radius: 2px;
     padding: 2px 4px;
     display: block;
+}
+
+.lg-outer .lg-thumb-outer.lg-thumb-align-middle {
+    text-align: left;
+}
+.lg-outer .lg-thumb-item.active, .lg-outer .lg-thumb-item:hover {
+    border-color: #3893d9!important;
+}
+
+.lightGallery-captions {
+    background-color: rgba(0,0,0,.45);
+    bottom: 0;
+    color: #eee;
+    left: 0;
+    padding: 10px 40px;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    z-index: 1080;
+    bottom: 100px;
+}
+.lg-sub-html p{
+  font-size: 16px;
+  margin: 0;
+}
+img.lg-object.lg-image{
+  height: 100vh;
 }
