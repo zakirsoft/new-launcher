@@ -194,3 +194,15 @@
 :root{
   scroll-behavior: unset !important
 }
+
+body {
+  .row {
+    margin-right: -20px !important;
+    margin-left: -20px !important;
+  }
+  
+  .row>* {
+    padding-right: 20px !important;
+    padding-left: 20px !important;
+  }
+}
