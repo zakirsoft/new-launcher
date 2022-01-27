@@ -391,6 +391,7 @@ function InitStoresSlide() {
   $gallery1.addEventListener("click", () => {
     gallery1.openGallery(0);
   });
+  // end gallery1
 
   const $gallery2 = document.getElementById("gallery-2");
   const gallery2 = window.lightGallery($gallery2, {
@@ -432,6 +433,7 @@ function InitStoresSlide() {
   $gallery2.addEventListener("click", () => {
     gallery2.openGallery(0);
   });
+  // end gallery2
 
   const $gallery3 = document.getElementById("gallery-3");
   const gallery3 = window.lightGallery($gallery3, {
@@ -474,6 +476,135 @@ function InitStoresSlide() {
     gallery3.openGallery(0);
   });
 
-  Resources
+  // end gallery3
+
+  const $gallery4 = document.getElementById("gallery-4");
+  const gallery4 = window.lightGallery($gallery4, {
+    dynamic: true,
+    plugins: [lgZoom, lgVideo, lgThumbnail],
+    dynamicEl: [
+      {
+        src:
+          "assets/img/slider/slider1.jpg",
+        thumb: "assets/img/slider/slider1.jpg",
+      },
+      {
+        src:
+          "assets/img/slider/popup1.jpg",
+        thumb: "assets/img/slider/popup1.jpg",
+      },
+      {
+        src:
+          "assets/img/slider/popup2.jpg",
+        thumb: "assets/img/slider/popup2.jpg",
+      },
+      {
+        src:
+          "assets/img/slider/popup3.jpg",
+        thumb: "assets/img/slider/popup3.jpg",
+      },
+      {
+        src:
+          "assets/img/slider/popup4.jpg",
+        thumb: "assets/img/slider/popup4.jpg",
+      },
+      {
+        src:
+          "assets/img/slider/popup5.jpg",
+        thumb: "assets/img/slider/popup5.jpg",
+      },
+    ]
+  });
+  $gallery4.addEventListener("click", () => {
+    gallery4.openGallery(0);
+  });
+  // end gallery4
+
+  const $gallery5 = document.getElementById("gallery-5");
+  const gallery5 = window.lightGallery($gallery5, {
+    dynamic: true,
+    plugins: [lgZoom, lgVideo, lgThumbnail],
+    dynamicEl: [
+      {
+        src:
+          "assets/img/slider/slider2.jpg",
+        thumb: "assets/img/slider/slider2.jpg",
+      },
+      {
+        src:
+          "assets/img/slider/popup5.jpg",
+        thumb: "assets/img/slider/popup5.jpg",
+      },
+      {
+        src:
+          "assets/img/slider/popup6.jpg",
+        thumb: "assets/img/slider/popup6.jpg",
+      },
+      {
+        src:
+          "assets/img/slider/popup7.jpg",
+        thumb: "assets/img/slider/popup7.jpg",
+      },
+      {
+        src:
+          "assets/img/slider/popup8.jpg",
+        thumb: "assets/img/slider/popup8.jpg",
+      },
+      {
+        src:
+          "assets/img/slider/popup5.jpg",
+        thumb: "assets/img/slider/popup5.jpg",
+      },
+    ]
+  });
+  $gallery5.addEventListener("click", () => {
+    gallery5.openGallery(0);
+  });
+  // end gallery5
+
+  const $gallery6 = document.getElementById("gallery-6");
+  const gallery6 = window.lightGallery($gallery6, {
+    dynamic: true,
+    plugins: [lgZoom, lgVideo, lgThumbnail],
+    dynamicEl: [
+      {
+        src:
+          "assets/img/slider/slider3.jpg",
+        thumb: "assets/img/slider/slider3.jpg",
+      },
+      {
+        src:
+          "assets/img/slider/popup8.jpg",
+        thumb: "assets/img/slider/popup8.jpg",
+      },
+      {
+        src:
+          "assets/img/slider/popup7.jpg",
+        thumb: "assets/img/slider/popup7.jpg",
+      },
+      {
+        src:
+          "assets/img/slider/popup5.jpg",
+        thumb: "assets/img/slider/popup5.jpg",
+      },
+      {
+        src:
+          "assets/img/slider/popup2.jpg",
+        thumb: "assets/img/slider/popup2.jpg",
+      },
+      {
+        src:
+          "assets/img/slider/popup1.jpg",
+        thumb: "assets/img/slider/popup3.jpg",
+      },
+    ]
+  });
+  $gallery6.addEventListener("click", () => {
+    gallery6.openGallery(0);
+  });
+
+  // end gallery6
+
+
 
 })(jQuery); 
