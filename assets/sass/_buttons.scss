@@ -81,7 +81,10 @@
   span{
     display: block;
     position: absolute;
-    height: 2px;   
+    @media #{lg_device}{
+      height: 2px;
+    }
+    height: 3px;
     width: 100%;
     background: var(--color-dark);
     border-radius: 50px;

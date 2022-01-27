@@ -117,8 +117,10 @@
 .chart-wrapper {
   // height: 800px;
   &.market-segment {
-    width: 800px;
-    overflow: scroll;
+    @media #{$lg_device}{ 
+      width: 800px;
+      overflow: scroll;
+    }
   }
 }
 

@@ -2433,9 +2433,10 @@ p .custom-badge-group {
 .responsive-chart {
   overflow-x: scroll; }
 
-.chart-wrapper.market-segment {
-  width: 800px;
-  overflow: scroll; }
+@media only screen and (max-width: 991.98px) {
+  .chart-wrapper.market-segment {
+    width: 800px;
+    overflow: scroll; } }
 
 @media (max-width: 575.98px) {
   .header-area .header-top .nav-toggle-btn {
@@ -2466,5 +2467,4 @@ body .row {
 body .row > * {
   padding-right: 20px !important;
   padding-left: 20px !important; }
-
 /*# sourceMappingURL=style.css.map */

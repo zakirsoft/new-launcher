@@ -304,7 +304,10 @@ var options_2 = {
   chart: {
     type: "bar",
     height: 350,
-    stacked: true
+    stacked: true,
+    toolbar: {
+      show: false,
+    }
   },
   plotOptions: {
     bar: {
