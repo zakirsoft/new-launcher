@@ -79,6 +79,11 @@
 	}
 }
 .footer-item{
+  @media #{$lg_device}{
+    .footer-content {
+      padding: 0 16px;
+    }
+  }
 	a{
 		&:hover{
 			font-weight: 700; 
