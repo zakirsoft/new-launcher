@@ -1726,56 +1726,7 @@ p .custom-badge-group {
   margin-bottom: 7px;
 }
 
-.hero-area {
-  padding-top: 80px;
-  padding-bottom: 80px;
-  position: relative;
-  z-index: 2;
-  overflow: hidden;
-}
-@media only screen and (max-width: 767.98px) {
-  .hero-area {
-    padding-top: 40px;
-    padding-bottom: 40px;
-  }
-  .hero-area p {
-    font-size: 12px;
-    line-height: 16px;
-  }
-}
-.hero-area .title-xl {
-  margin-bottom: 43px;
-}
-@media only screen and (max-width: 767.98px) {
-  .hero-area .title-xl {
-    margin-bottom: 16px;
-  }
-}
-.hero-area .count-wrapper {
-  margin-bottom: 33px;
-}
-@media only screen and (max-width: 767.98px) {
-  .hero-area .count-wrapper {
-    margin-bottom: 14px;
-  }
-}
-.hero-area .ornament {
-  position: absolute;
-  right: 24px;
-  bottom: 32px;
-  z-index: -2;
-  min-width: 420px;
-}
-.hero-area .ornament img {
-  min-width: 420px;
-  min-height: 420px;
-}
 
-.hero-image-wrapper {
-  text-align: center;
-  position: relative;
-  left: 20px;
-}
 
 .infographic-wrap {
   position: relative;
@@ -2908,3 +2859,137 @@ p .custom-badge-group {
 }
 
 /*# sourceMappingURL=style.css.map */
+
+
+/* jihad start css */
+
+
+/* hero section */
+section.hero-area {
+    border-bottom: 1px solid #E6E7EB;
+    padding-bottom: 8px;
+}
+.hero-header {
+    display: flex;
+    align-items: center;
+    padding: 13px 0;
+    justify-content: space-between;
+}
+.hero-header-mobile{
+  display: none;
+}
+/*For Mobile Layout*/
+@media (max-width: 500px) {
+.hero-header-desktop{
+  display: none;
+}
+.hero-header-mobile{
+  display: block;
+}
+
+}
+.breadcrumb-menu ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.breadcrumb-menu ul li{
+  padding: 0 1px;
+  display: inline-block;
+}
+.breadcrumb-menu ul li a{
+  font-size: 14px;
+  line-height: 140%;
+  color: #6B7380;
+  text-decoration: none;
+  transition: all 0.4s;
+}
+.breadcrumb-menu ul li a:hover{
+  color: #752A86;
+}
+
+button.brochure-btn {
+    background-color: transparent;
+    width: 98px;
+    height: 28px;
+    left: 1262px;
+    top: 13px;
+    border: 1px solid #743393;
+    box-sizing: border-box;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1;
+    color: #743393;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+button.brochure-btn img{
+  margin-right: 5px;
+}
+
+/*hero swiper slider */
+.slider-wrap  {
+    overflow: hidden;
+    position: relative;
+}
+.project-img {
+    position: absolute;
+    z-index: 1;
+    left: 8px;
+    bottom: 8px;
+}
+.project-img ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+.project-img ul li a {
+    width: 48px;
+    height: 24px;
+    background: rgba(17, 24, 40, 0.7);
+    border-radius: 2px;
+    display: flex;
+    text-align: center;
+    font-size: 14px;
+    line-height: 1;
+    color: #FFFFFF;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    padding: 2px 6px 2px 4px;
+    margin-right: 2.5px;
+}
+.project-img ul li a img{
+  margin-right: 6px;
+}
+.st_screenfix {
+    margin-right: calc((-100vw + 100%)/2);
+    max-width: 1900px;
+}
+.slider-thumb{
+  height: 450px;
+  background-position: center;
+  background-size: cover;
+  padding: 8px;
+}
+@media (max-width: 500px) {
+  .slider-thumb{
+    height: 170px;
+    
+  }
+}
+
+button.project-btn {
+    border: none;
+    font-size: 12px;
+    line-height: 140%;
+    color: #6B7380;
+    background: #F3F4F6;
+    border-radius: 2px;
+    padding: 2px 4px;
+    display: block;
+}

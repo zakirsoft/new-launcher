@@ -326,8 +326,154 @@ function InitStoresSlide() {
   });
 
   // start jihad
+  var swiper = new Swiper(".swiper-slider", {
+    slidesPerView: 1,
+    spaceBetween: 8,
+    loop: true,
 
+    // autoplay: {
+    //   delay: 7000,
+    //   disableOnInteraction: false
+    // },
 
+    breakpoints: {
+      0: {
+        slidesPerView: 1.2
+      },
+      991: {
+        slidesPerView: 2.5
+      },
+      700: {
+        slidesPerView: 1.5
+      }
+    }
+  });
 
+  // light box
+
+  const $gallery1 = document.getElementById("gallery-1");
+  const gallery1 = window.lightGallery($gallery1, {
+    dynamic: true,
+    plugins: [lgZoom, lgVideo, lgThumbnail],
+    dynamicEl: [
+      {
+        src:
+          "assets/img/slider/slider1.jpg",
+        thumb: "assets/img/slider/slider1.jpg",
+      },
+      {
+        src:
+          "assets/img/slider/popup1.jpg",
+        thumb: "assets/img/slider/popup1.jpg",
+      },
+      {
+        src:
+          "assets/img/slider/popup2.jpg",
+        thumb: "assets/img/slider/popup2.jpg",
+      },
+      {
+        src:
+          "assets/img/slider/popup3.jpg",
+        thumb: "assets/img/slider/popup3.jpg",
+      },
+      {
+        src:
+          "assets/img/slider/popup4.jpg",
+        thumb: "assets/img/slider/popup4.jpg",
+      },
+      {
+        src:
+          "assets/img/slider/popup5.jpg",
+        thumb: "assets/img/slider/popup5.jpg",
+      },
+    ]
+  });
+  $gallery1.addEventListener("click", () => {
+    gallery1.openGallery(0);
+  });
+
+  const $gallery2 = document.getElementById("gallery-2");
+  const gallery2 = window.lightGallery($gallery2, {
+    dynamic: true,
+    plugins: [lgZoom, lgVideo, lgThumbnail],
+    dynamicEl: [
+      {
+        src:
+          "assets/img/slider/slider2.jpg",
+        thumb: "assets/img/slider/slider2.jpg",
+      },
+      {
+        src:
+          "assets/img/slider/popup5.jpg",
+        thumb: "assets/img/slider/popup5.jpg",
+      },
+      {
+        src:
+          "assets/img/slider/popup6.jpg",
+        thumb: "assets/img/slider/popup6.jpg",
+      },
+      {
+        src:
+          "assets/img/slider/popup7.jpg",
+        thumb: "assets/img/slider/popup7.jpg",
+      },
+      {
+        src:
+          "assets/img/slider/popup8.jpg",
+        thumb: "assets/img/slider/popup8.jpg",
+      },
+      {
+        src:
+          "assets/img/slider/popup5.jpg",
+        thumb: "assets/img/slider/popup5.jpg",
+      },
+    ]
+  });
+  $gallery2.addEventListener("click", () => {
+    gallery2.openGallery(0);
+  });
+
+  const $gallery3 = document.getElementById("gallery-3");
+  const gallery3 = window.lightGallery($gallery3, {
+    dynamic: true,
+    plugins: [lgZoom, lgVideo, lgThumbnail],
+    dynamicEl: [
+      {
+        src:
+          "assets/img/slider/slider3.jpg",
+        thumb: "assets/img/slider/slider3.jpg",
+      },
+      {
+        src:
+          "assets/img/slider/popup8.jpg",
+        thumb: "assets/img/slider/popup8.jpg",
+      },
+      {
+        src:
+          "assets/img/slider/popup7.jpg",
+        thumb: "assets/img/slider/popup7.jpg",
+      },
+      {
+        src:
+          "assets/img/slider/popup5.jpg",
+        thumb: "assets/img/slider/popup5.jpg",
+      },
+      {
+        src:
+          "assets/img/slider/popup2.jpg",
+        thumb: "assets/img/slider/popup2.jpg",
+      },
+      {
+        src:
+          "assets/img/slider/popup1.jpg",
+        thumb: "assets/img/slider/popup.jpg",
+      },
+    ]
+  });
+  $gallery3.addEventListener("click", () => {
+    gallery3.openGallery(0);
+  });
+
+  Resources
 
 })(jQuery); 
