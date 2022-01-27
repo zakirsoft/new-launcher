@@ -2428,7 +2428,7 @@ p .custom-badge-group {
   padding: 16px 24px; }
 
 .custom-tab-wrapper span.d-inline-block.mb-md-1 {
-  margin-bottom: 1px !important; }
+  margin-bottom: 0px !important; }
 
 .responsive-chart {
   overflow-x: scroll; }
@@ -2436,5 +2436,25 @@ p .custom-badge-group {
 .chart-wrapper.market-segment {
   width: 800px;
   overflow: scroll; }
+
+@media (max-width: 575.98px) {
+  .header-area .header-top .nav-toggle-btn {
+    margin-left: 20px; } }
+
+@media only screen and (max-width: 1200px) {
+  .all-filters-area .all-filters-wrap, .all-filters-area .all-sort-fixd-wrap, .sort-fixd-wrap .all-filters-wrap, .sort-fixd-wrap .all-sort-fixd-wrap {
+    height: calc(100% - 138px);
+    padding-bottom: 30px; }
+  .all-filters-area .footer-btn .btn, .sort-fixd-wrap .footer-btn .btn {
+    padding: 12px 10px; } }
+
+.side-menu-wrapper .side-navbar-nav {
+  padding-bottom: 30px; }
+
+.side-menu-wrapper .sidenav-footer .btn span {
+  margin-top: 1px; }
+  @media (max-width: 575.98px) {
+    .side-menu-wrapper .sidenav-footer .btn span {
+      font-size: 12px; } }
 
 /*# sourceMappingURL=style.css.map */

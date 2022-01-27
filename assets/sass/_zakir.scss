@@ -107,7 +107,7 @@
 }
 
 .custom-tab-wrapper span.d-inline-block.mb-md-1 {
-  margin-bottom: 1px !important;
+  margin-bottom: 0px !important;
 }
 
 .responsive-chart {
@@ -119,5 +119,74 @@
   &.market-segment {
     width: 800px;
     overflow: scroll;
+  }
+}
+
+.header-area{
+  .header-top{
+    .nav-toggle-btn{ 
+      @media #{$sm_device}{ 
+        margin-left: 20px; 
+      }
+    }
+  }
+}
+
+
+.all-filters-area,.sort-fixd-wrap{
+	@media #{$xl_device}{
+		.all-filters-wrap,.all-sort-fixd-wrap{
+			height:calc(100% - 138px);
+      padding-bottom: 30px;
+		}
+		.all-sort-fixd-wrap{
+		}
+		.footer-btn{
+			// position: absolute;
+			// bottom:0;left: 0;width: 100%;
+			// z-index: 102; 
+			// box-shadow: 0px -2px 20px rgba(0, 0, 0, 0.07);
+			// background: #FFFFFF; 
+			.btn{
+				padding: 12px 10px; 
+			}
+		} 
+		.input-style2.focused .placeholder_text{
+		} 
+	}
+	@media #{$sm_device}{
+	}
+}
+
+.side-menu-wrapper .side-navbar-nav {
+  padding-bottom: 30px;
+}
+
+
+
+.side-menu-wrapper{ 
+  // .main-nav-wrap{
+  // }
+  // @media #{$sm_device}{
+  // }
+  // .nav-toggle-btn{ 
+  //   @media #{$sm_device}{
+  //   }
+  // } 
+  // .side-menu-header{ 
+  //   @media #{$sm_device}{
+  //   }
+  // }
+  // .navbar-collapse-wrap{
+  // } 
+  .sidenav-footer{
+    .btn{ 
+      span{
+        margin-top: 1px;
+        @media #{$sm_device}{
+         font-size: 12px; 
+        }
+      }
+    }
   }
 }
