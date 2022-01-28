@@ -2474,4 +2474,24 @@ body .row > * {
   padding-right: 20px !important;
   padding-left: 20px !important; }
 
+.apexcharts-legend-marker {
+  margin-bottom: -1px !important; }
+
+.children-check {
+  position: relative; }
+  .children-check::after {
+    position: absolute;
+    content: '';
+    left: 4px;
+    height: 2px;
+    width: 8px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    background-color: #dee2e6; }
+
+.children-check input.form-check-input {
+  background-color: #743393 !important;
+  border-color: #743393 !important; }
+
 /*# sourceMappingURL=style.css.map */

@@ -343,4 +343,47 @@ function InitStoresSlide(){
       $(".all-sort-fixd-wrap .option").removeClass('selected focus');
       $(this).addClass('selected focus'); 
     });
+
+    // check and uncheck all items
+    let checkHeaderInput = $('.check-group-head .form-check-input');
+    $(checkHeaderInput).click(function() {
+      if($(this).prop('checked') == true){
+        $(this).closest('li.check-group').find('.check-box-lists :checkbox').prop('checked',this.checked);
+        console.log('all check on click')
+      } else {
+        $(this).closest('li.check-group').find('.check-box-lists :checkbox').prop('checked',this.checked);
+        console.log('all uncheck on click')
+      }
+    })
+
+    $('.form-check-input').change(function(){
+      let parent = $(this).closest('li.check-group');
+      let checkboxHead = $(parent).find('.check-group-head');
+      let checkboxHeadInput = $(parent).find('.check-group-head .form-check-input');
+      let children = $(parent).find('.check-box-lists .form-check-input')
+      
+      var checkedChileren = $(parent).find('.check-box-lists .form-check-input:checked').length
+      let totalChildren = $(children).length
+      
+      // all item is checked
+      if(totalChildren == checkedChileren){
+        $(checkboxHead).removeClass('children-check')
+        $(checkboxHeadInput).attr('checked', true);
+        console.log('all checked')
+      }else {
+        $(checkboxHeadInput).attr('checked', false);
+        console.log('all unchecked')
+      }
+      
+      // one of item is checked
+      if(checkedChileren > 0 & checkedChileren < totalChildren){
+        $(checkboxHead).addClass('children-check')
+        $(checkboxHeadInput).attr('checked', false);
+      }else {
+        $(checkboxHead).removeClass('children-check')
+      }
+    })
+
 })(jQuery); 
+
+

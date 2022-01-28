@@ -208,3 +208,28 @@ body {
     padding-left: 20px !important;
   }
 }
+
+.apexcharts-legend-marker {
+  margin-bottom: -1px !important;
+}
+
+
+.children-check {
+  position: relative;
+  &::after {
+    position: absolute;
+    content: '';
+    left: 4px;
+    height: 2px;
+    width: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #dee2e6;
+  }
+} 
+.children-check input.form-check-input {
+	background-color:#743393 !important;
+	border-color:#743393 !important;
+  // background-color: #743393;
+  // border-color: #743393;
+}
