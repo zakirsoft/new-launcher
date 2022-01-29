@@ -2494,4 +2494,35 @@ body .row > * {
   background-color: #743393 !important;
   border-color: #743393 !important; }
 
+.custom-tab-wrapper .nav-tabs .nav-link {
+  background-color: transparent;
+  border-radius: 2px;
+  line-height: 34px;
+  height: 34px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-top: 0;
+  padding-bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .custom-tab-wrapper .nav-tabs .nav-link.active {
+    background-color: white; }
+  @media (max-width: 575.98px) {
+    .custom-tab-wrapper .nav-tabs .nav-link {
+      height: 22px;
+      line-height: 15px;
+      font-size: 12px;
+      font-weight: 600;
+      padding: 0 4px; } }
+
+.custom-tab-wrapper .nav-tabs .tab-slide {
+  display: none; }
+
 /*# sourceMappingURL=style.css.map */
